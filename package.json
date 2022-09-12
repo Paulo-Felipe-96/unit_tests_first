@@ -4,7 +4,8 @@
   "description": "unit test for beginners",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "author": "Paulo-Felipe-96",
   "license": "ISC",
