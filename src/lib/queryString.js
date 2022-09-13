@@ -1,5 +1,5 @@
 module.exports = function queryString(obj) {
-  if (typeof obj !== "object") {
+  if (typeof obj !== "object" || Array.isArray(obj)) {
     throw new TypeError("Invalid type");
   }
 
