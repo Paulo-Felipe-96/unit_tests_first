@@ -1,12 +1,13 @@
 function sum(num1, num2) {
-  const int1 = parseInt(num1);
-  const int2 = parseInt(num2);
+  const a = parseInt(num1);
+  const b = parseInt(num2);
+  const { isNaN } = Number;
 
-  if (Number.isNaN(int1) || Number.isNaN(int2)) {
-    throw new Error("Please check your input");
+  if (isNaN(a) || isNaN(b)) {
+    throw new Error("Nan was provided");
   }
 
-  return parseInt(num1) + parseInt(num2);
+  return a + b;
 }
 
 module.exports = { sum };
