@@ -1,0 +1,10 @@
+{
+    "verbose": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": ["./src/**", "!**/__tests__/**/*.(j|t)s"],
+    "coverageThreshold": {
+        "global": {
+            "lines": 100
+        }
+    }
+}
